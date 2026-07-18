@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MeteoVision</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <h1>☀️ MeteoVision</h1>
+    <nav>
+      <a href="#recherche">Recherche</a>
+      <a href="#resultat">Résultat</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section id="recherche" class="search-section">
+  <h2>Rechercher une ville</h2>
+  <form id="weatherForm">
+    <input id="cityInput" type="text" placeholder="Ex: Port-au-Prince, Paris, Tokyo">
+    <button type="submit">Consulter la météo</button>
+  </form>
+
+  <div id="loading" hidden>Chargement...</div>
+  <p id="apiError" hidden></p>
+</section>
+
+<section id="resultat">
+  <article id="weatherCard" hidden class="weather-card">
+    <div class="card-top">
+      <div>
+        <h2 id="cityName">Ville</h2>
+        <p id="countryName">Pays</p>
+      </div>
+      <p>Mis à jour : <span id="updatedAt">--</span></p>
+    </div>
+
+    <div class="card-main">
+      <div class="temp-display">
+        <h1 id="temperature">--°C</h1>
+      </div>
+
+      <div class="condition-display">
+        <div id="iconWrap">☀️</div>
+        <h3 id="statusLabel">Condition</h3>
+      </div>
+    </div>
+
+    <div class="card-stats">
+      <p>💨 Vent : <span id="windSpeed">-- km/h</span></p>
+    </div>
+  </article>
+</section>
+</main>
+
+<footer>
+<p>MeteoVision - 2026</p>
+</footer>
+
+<script src="js/weather.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

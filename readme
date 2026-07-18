@@ -1,0 +1,61 @@
+# ⛅ Application Météo
+
+Yon aplikasyon web ki bay itilizatè yo enfòmasyon meteo an tan reyèl pou nenpòt vil nan lemonn.
+
+## 📋 Deskripsyon
+
+Application Météo pèmèt itilizatè yo:
+- Chèche meteo yon vil pa non
+- Wè tanperati aktyèl la, imidite, vitès van, ak kondisyon syèl la (solèy, lapli, nyaj, elatriye)
+- Wè prevision pou pwochen jou yo
+- Detekte pozisyon itilizatè a otomatikman (opsyonèl) pou montre meteo lokal
+
+## 🛠️ Teknoloji yo itilize
+
+- **HTML5 / CSS3 / JavaScript** (vanila)
+- **OpenWeatherMap API** (oswa lòt API meteo)
+- **Geolocation API** (pou pozisyon itilizatè a)
+
+## 📁 Estrikti pwojè a
+
+```
+application-meteo/
+├── index.html
+├── css/
+│   └── style.css
+├── js/
+│   └── script.js
+├── images/
+└── README.md
+```
+
+## 🚀 Kijan pou lanse pwojè a lokalman
+
+1. Klone repo a:
+   ```bash
+   git clone https://github.com/[non-itilizatè]/application-meteo.git
+   ```
+2. Ouvri dosye a nan yon editè kòd (VS Code, elatriye)
+3. Ale sou [OpenWeatherMap](https://openweathermap.org/api) pou jwenn yon **API key** gratis
+4. Mete API key ou a nan fichye `js/script.js`
+5. Lanse fichye `index.html` la ak **Live Server** (pito pase `file://` pou evite pwoblèm CORS ak API a)
+
+## 🔌 API itilize
+
+**Egzanp requête:**
+```
+GET https://api.openweathermap.org/data/2.5/weather?q={vil}&appid={API_KEY}&units=metric
+```
+
+## ⚠️ Nòt teknik
+
+- Toujou lanse pwojè a ak Live Server, paske protokòl `file://` bloke kèk requête API akoz CORS.
+- Pa janm pibliye API key ou a piblikman nan yon repo GitHub piblik — itilize yon fichye `.env` oswa `.gitignore` si posib.
+
+## ✍️ Otè
+
+Jean Baptiste
+
+## 📄 Lisans
+
+Pwojè pèsonèl / akademik — pou itilizasyon edikatif sèlman.
